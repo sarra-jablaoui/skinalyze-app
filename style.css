@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("{{ url_for('static', filename='images/photo.jpg') }}");
+
+    background-size: cover; /* Couvre toute la page */
+    background-position: center;
+    background-repeat: no-repeat; /* Pas de répétition de l'image */
+    margin: 0;
+    padding: 0;
+    background-color: #c89595;
+    display: flex;
+    justify-content: center;
+    align-items: cent²er;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    top: 1px; /* Déplace de 20px vers le bas */
+    left: 475px; /* Déplace de 30px vers la droite */
+    text-align: center;
+    background: rgba(255, 255, 255, 0.403);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    
+}
+
+
+h1 {
+    color: #333;
+}
+
+.options button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    background: rgba(250, 132, 132, 0.412);
+    
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+button{
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 15px;
+    background-color: rgba(250, 132, 132, 0.412); /* Changer la couleur au survol */
+}
+
+button:hover {
+    border: none;
+    border-radius: 15px;
+    background-color: rgba(250, 132, 132, 0.412); /* Changer la couleur au survol */
+    transform: translateY(-3px); /* Légère élévation du bouton */
+}
+
+#formContainer, #resultContainer {
+    margin-top: 20px;
+}

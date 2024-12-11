@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKINALYZE</title>
+    <!-- Utilisation de la fonction Flask pour inclure les fichiers statiques -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>SKINALYZE</h1>
+        <p>Entrez votre photo </p>
+
+        <!-- Formulaire pour télécharger une image -->
+        <form id="uploadForm" enctype="multipart/form-data">
+            <input type="file" id="imageInput" name="file" accept="image/*" required>
+            <button type="submit">Analyser</button>
+        </form>
+
+        <!-- Conteneur pour afficher le résultat -->
+        <div id="resultContainer">
+            <p id="result"></p>
+        </div>
+    </div>
+
+    <!-- Script JavaScript -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
